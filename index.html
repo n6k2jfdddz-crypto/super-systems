@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#080d17"><meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="KALI NEXUS">
+<link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="style.css"><title>KALI NEXUS iOS</title>
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="sigil">◈</span><div><b>KALI <em>NEXUS</em></b><small>IOS SECURITY COMPANION</small></div></div>
+  <span class="local">● NO DISPOSITIVO</span>
+</header>
+<main>
+  <section class="hero">
+    <p class="eyebrow">SECURITY CONTROL CENTER / MOBILE</p>
+    <h1>Seu centro de<br><span>segurança.</span></h1>
+    <p class="sub">Painel local para organização, triagem de arquivos e acompanhamento manual de privacidade no iPhone.</p>
+  </section>
+
+  <section class="stats">
+    <article class="tile"><small>PLATAFORMA</small><strong>iOS / Safari</strong><span id="platform">Verificando navegador…</span></article>
+    <article class="tile"><small>ARMAZENAMENTO</small><strong>Local</strong><span>Arquivos escolhidos por você</span></article>
+  </section>
+
+  <section class="panel">
+    <div class="panel-head"><div><p class="eyebrow">01 / PRIVACIDADE</p><h2>Central VPN</h2></div><span class="pill">MANUAL</span></div>
+    <p class="desc">O iOS não permite que uma página web crie ou encadeie túneis VPN. Use um app VPN confiável e gerencie a conexão em Ajustes.</p>
+    <div class="vpnrow"><span class="dot"></span><div><b>VPN do iPhone</b><small>O estado real não pode ser lido por esta página.</small></div><a href="App-prefs:root=General&path=VPN" class="action">Ajustes</a></div>
+    <div class="note">Para duas VPNs em sequência, os provedores precisam oferecer suporte explícito a multi-hop. Duas VPNs ligadas ao mesmo tempo no iPhone normalmente não criam uma cadeia.</div>
+  </section>
+
+  <section class="panel">
+    <div class="panel-head"><div><p class="eyebrow">02 / REVERSE ENGINEERING</p><h2>Triagem de arquivo</h2></div><span class="pill">NO NAVEGADOR</span></div>
+    <p class="desc">Selecione um arquivo que você possui ou tem autorização para analisar. A página calcula SHA-256, identifica algumas assinaturas e mostra strings ASCII. Não executa o arquivo.</p>
+    <label class="filepick">＋ Escolher APK, EXE, DLL, ELF ou BIN<input id="file" type="file" accept=".apk,.exe,.dll,.elf,.so,.bin,application/octet-stream"></label>
+    <div id="analysis" class="result hidden"></div>
+  </section>
+
+  <section class="panel">
+    <div class="panel-head"><div><p class="eyebrow">03 / REDE LOCAL</p><h2>Conexão</h2></div><span class="pill">BÁSICO</span></div>
+    <div class="info-row"><span>Tipo de conexão</span><b id="connection">Não informado</b></div>
+    <div class="info-row"><span>Online (estimativa)</span><b id="online">Verificando…</b></div>
+    <p class="note">O Safari não fornece endereço IP local, lista de dispositivos Wi-Fi ou captura de tráfego para páginas comuns. Este painel não varre redes.</p>
+  </section>
+
+  <section class="panel">
+    <div class="panel-head"><div><p class="eyebrow">04 / FERRAMENTAS</p><h2>Laboratório</h2></div><span class="pill">GUIA</span></div>
+    <div class="tool"><b>Ghidra</b><small>Análise aprofundada de binários em um computador compatível.</small></div>
+    <div class="tool"><b>JADX</b><small>Inspeção de código decompilado de aplicativos Android em computador.</small></div>
+    <div class="tool"><b>iOS</b><small>Este companion não instala ferramentas de engenharia reversa nem executa APK/EXE no iPhone.</small></div>
+  </section>
+  <footer>KALI NEXUS MOBILE · Protótipo PWA · Use somente arquivos e sistemas autorizados.</footer>
+</main>
+<script src="app.js"></script>
+</body></html>
